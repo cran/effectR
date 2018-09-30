@@ -4,7 +4,8 @@
 \alias{get_hmmer_path}
 \title{Check if HMMER is installed and return path}
 \usage{
-get_hmmer_path(command, hmmer.path = NULL, error = TRUE, verbose = FALSE)
+get_hmmer_path(command, hmmer.path = NULL, error = TRUE,
+  verbose = FALSE)
 }
 \arguments{
 \item{command}{Which command to get the path for. For example "hmmsearch".}

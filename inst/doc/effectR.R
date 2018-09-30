@@ -19,7 +19,7 @@ REGEX <- regex.search(sequence = ORF, motif = "custom", reg.pat = reg.pat)
 length(REGEX)
 
 ## ---- eval=FALSE---------------------------------------------------------
-#  candidate.rxlr <- hmm.search(original.seq = fasta.file, regex.seq = ORF, mafft.path = "/usr/local/bin/", hmm.path = "/usr/local/bin/")
+#  candidate.rxlr <- hmm.search(original.seq = fasta.file, regex.seq = REGEX, mafft.path = "/usr/local/bin/", hmm.path = "/usr/local/bin/")
 
 ## ---- eval=F-------------------------------------------------------------
 #  head(candidate.rxlr$REGEX, n = 2)

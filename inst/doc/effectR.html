@@ -12,7 +12,7 @@
 
 <meta name="author" content="Javier F. Tabima" />
 
-<meta name="date" content="2018-04-20" />
+<meta name="date" content="2018-09-30" />
 
 <title>effectR: An R package to call oomycete effectors</title>
 
@@ -70,7 +70,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">effectR: An R package to call oomycete effectors</h1>
 <h4 class="author"><em>Javier F. Tabima</em></h4>
-<h4 class="date"><em>2018-04-20</em></h4>
+<h4 class="date"><em>2018-09-30</em></h4>
 
 
 
@@ -149,37 +149,37 @@ fasta.file &lt;-<span class="st"> </span><span class="kw">system.file</span>(<sp
 <span class="kw">library</span>(seqinr)
 ORF &lt;-<span class="st"> </span><span class="kw">read.fasta</span>(fasta.file)
 <span class="kw">head</span>(ORF, <span class="dt">n =</span> <span class="dv">2</span>)</code></pre></div>
-<pre><code>## $DS028118_1098
-##   [1] &quot;m&quot; &quot;r&quot; &quot;l&quot; &quot;a&quot; &quot;m&quot; &quot;i&quot; &quot;l&quot; &quot;l&quot; &quot;s&quot; &quot;i&quot; &quot;p&quot; &quot;l&quot; &quot;f&quot; &quot;v&quot; &quot;s&quot; &quot;g&quot; &quot;n&quot;
-##  [18] &quot;v&quot; &quot;l&quot; &quot;h&quot; &quot;v&quot; &quot;p&quot; &quot;t&quot; &quot;q&quot; &quot;v&quot; &quot;t&quot; &quot;k&quot; &quot;s&quot; &quot;h&quot; &quot;a&quot; &quot;v&quot; &quot;s&quot; &quot;p&quot; &quot;d&quot;
-##  [35] &quot;a&quot; &quot;q&quot; &quot;f&quot; &quot;v&quot; &quot;v&quot; &quot;a&quot; &quot;m&quot; &quot;g&quot; &quot;r&quot; &quot;r&quot; &quot;s&quot; &quot;l&quot; &quot;r&quot; &quot;t&quot; &quot;s&quot; &quot;g&quot; &quot;e&quot;
-##  [52] &quot;a&quot; &quot;n&quot; &quot;e&quot; &quot;e&quot; &quot;r&quot; &quot;t&quot; &quot;r&quot; &quot;l&quot; &quot;n&quot; &quot;t&quot; &quot;l&quot; &quot;l&quot; &quot;l&quot; &quot;l&quot; &quot;d&quot; &quot;d&quot; &quot;v&quot;
-##  [69] &quot;t&quot; &quot;e&quot; &quot;a&quot; &quot;e&quot; &quot;m&quot; &quot;s&quot; &quot;s&quot; &quot;i&quot; &quot;k&quot; &quot;k&quot; &quot;l&quot; &quot;a&quot; &quot;l&quot; &quot;t&quot; &quot;f&quot; &quot;a&quot; &quot;k&quot;
-##  [86] &quot;l&quot; &quot;e&quot; &quot;n&quot; &quot;r&quot; &quot;n&quot; &quot;d&quot; &quot;g&quot; &quot;a&quot; &quot;a&quot; &quot;d&quot; &quot;l&quot; &quot;f&quot; &quot;n&quot; &quot;m&quot; &quot;l&quot; &quot;r&quot; &quot;r&quot;
-## [103] &quot;q&quot; &quot;g&quot; &quot;h&quot; &quot;t&quot; &quot;k&quot; &quot;e&quot; &quot;s&quot; &quot;a&quot; &quot;r&quot; &quot;n&quot; &quot;a&quot; &quot;g&quot; &quot;n&quot; &quot;l&quot; &quot;y&quot; &quot;t&quot; &quot;k&quot;
-## [120] &quot;y&quot; &quot;l&quot; &quot;q&quot; &quot;n&quot; &quot;p&quot; &quot;s&quot; &quot;a&quot; &quot;f&quot; &quot;h&quot; &quot;t&quot;
+<pre><code>## $PITG_23132_PexRD36_RxLR
+##  [1] &quot;m&quot; &quot;r&quot; &quot;a&quot; &quot;n&quot; &quot;v&quot; &quot;i&quot; &quot;v&quot; &quot;v&quot; &quot;a&quot; &quot;l&quot; &quot;a&quot; &quot;l&quot; &quot;y&quot; &quot;i&quot; &quot;a&quot; &quot;c&quot; &quot;a&quot;
+## [18] &quot;n&quot; &quot;v&quot; &quot;t&quot; &quot;l&quot; &quot;a&quot; &quot;a&quot; &quot;c&quot; &quot;a&quot; &quot;k&quot; &quot;s&quot; &quot;r&quot; &quot;h&quot; &quot;l&quot; &quot;r&quot; &quot;v&quot; &quot;n&quot; &quot;g&quot;
+## [35] &quot;k&quot; &quot;d&quot; &quot;a&quot; &quot;l&quot; &quot;w&quot; &quot;n&quot; &quot;y&quot; &quot;d&quot; &quot;t&quot; &quot;s&quot; &quot;g&quot; &quot;g&quot; &quot;i&quot; &quot;n&quot; &quot;s&quot; &quot;i&quot; &quot;v&quot;
+## [52] &quot;a&quot; &quot;d&quot; &quot;d&quot; &quot;e&quot; &quot;e&quot; &quot;r&quot; &quot;v&quot; &quot;v&quot; &quot;s&quot; &quot;f&quot; &quot;s&quot; &quot;g&quot; &quot;i&quot; &quot;k&quot; &quot;r&quot; &quot;w&quot; &quot;l&quot;
+## [69] &quot;k&quot; &quot;e&quot; &quot;l&quot; &quot;f&quot; &quot;k&quot; &quot;n&quot; &quot;w&quot; &quot;s&quot;
 ## attr(,&quot;name&quot;)
-## [1] &quot;DS028118_1098&quot;
+## [1] &quot;PITG_23132_PexRD36_RxLR&quot;
 ## attr(,&quot;Annot&quot;)
-## [1] &quot;&gt;DS028118_1098 [2041764 - 2042150] | organism=Phytophthora_infestans_T30-4 | version=2015-03-12 | length=6928287 | SO=supercontig&quot;
+## [1] &quot;&gt;PITG_23132_PexRD36_RxLR&quot;
 ## attr(,&quot;class&quot;)
 ## [1] &quot;SeqFastadna&quot;
 ## 
-## $DS028118_4814
-##   [1] &quot;m&quot; &quot;r&quot; &quot;l&quot; &quot;l&quot; &quot;y&quot; &quot;v&quot; &quot;l&quot; &quot;i&quot; &quot;a&quot; &quot;a&quot; &quot;a&quot; &quot;a&quot; &quot;s&quot; &quot;l&quot; &quot;l&quot; &quot;a&quot; &quot;n&quot;
-##  [18] &quot;i&quot; &quot;e&quot; &quot;a&quot; &quot;t&quot; &quot;t&quot; &quot;s&quot; &quot;a&quot; &quot;d&quot; &quot;s&quot; &quot;a&quot; &quot;k&quot; &quot;m&quot; &quot;i&quot; &quot;s&quot; &quot;v&quot; &quot;q&quot; &quot;v&quot;
-##  [35] &quot;s&quot; &quot;k&quot; &quot;t&quot; &quot;t&quot; &quot;r&quot; &quot;r&quot; &quot;f&quot; &quot;l&quot; &quot;r&quot; &quot;s&quot; &quot;p&quot; &quot;k&quot; &quot;p&quot; &quot;y&quot; &quot;e&quot; &quot;n&quot; &quot;n&quot;
-##  [52] &quot;e&quot; &quot;e&quot; &quot;e&quot; &quot;r&quot; &quot;a&quot; &quot;p&quot; &quot;t&quot; &quot;n&quot; &quot;i&quot; &quot;l&quot; &quot;t&quot; &quot;l&quot; &quot;v&quot; &quot;d&quot; &quot;d&quot; &quot;a&quot; &quot;a&quot;
-##  [69] &quot;k&quot; &quot;a&quot; &quot;l&quot; &quot;p&quot; &quot;s&quot; &quot;a&quot; &quot;d&quot; &quot;e&quot; &quot;a&quot; &quot;a&quot; &quot;k&quot; &quot;v&quot; &quot;l&quot; &quot;p&quot; &quot;t&quot; &quot;l&quot; &quot;d&quot;
-##  [86] &quot;d&quot; &quot;l&quot; &quot;f&quot; &quot;r&quot; &quot;i&quot; &quot;q&quot; &quot;k&quot; &quot;m&quot; &quot;d&quot; &quot;e&quot; &quot;a&quot; &quot;p&quot; &quot;n&quot; &quot;t&quot; &quot;k&quot; &quot;k&quot; &quot;a&quot;
-## [103] &quot;m&quot; &quot;e&quot; &quot;i&quot; &quot;v&quot; &quot;k&quot; &quot;p&quot; &quot;l&quot; &quot;f&quot; &quot;d&quot; &quot;k&quot; &quot;m&quot; &quot;s&quot; &quot;s&quot; &quot;y&quot; &quot;p&quot; &quot;k&quot; &quot;i&quot;
-## [120] &quot;k&quot; &quot;e&quot; &quot;a&quot; &quot;a&quot; &quot;l&quot; &quot;k&quot; &quot;e&quot; &quot;m&quot; &quot;e&quot; &quot;t&quot; &quot;n&quot; &quot;q&quot; &quot;n&quot; &quot;l&quot; &quot;k&quot; &quot;s&quot; &quot;l&quot;
-## [137] &quot;w&quot; &quot;s&quot; &quot;h&quot; &quot;f&quot; &quot;i&quot; &quot;l&quot; &quot;s&quot; &quot;k&quot; &quot;r&quot; &quot;v&quot; &quot;n&quot; &quot;f&quot; &quot;d&quot; &quot;v&quot; &quot;k&quot; &quot;e&quot; &quot;i&quot;
-## [154] &quot;s&quot; &quot;k&quot; &quot;q&quot; &quot;r&quot; &quot;p&quot; &quot;s&quot; &quot;a&quot; &quot;s&quot;
+## $PITG_15287_PexRD1_RxLR
+##   [1] &quot;m&quot; &quot;r&quot; &quot;a&quot; &quot;c&quot; &quot;n&quot; &quot;t&quot; &quot;l&quot; &quot;l&quot; &quot;p&quot; &quot;t&quot; &quot;a&quot; &quot;i&quot; &quot;v&quot; &quot;l&quot; &quot;t&quot; &quot;s&quot; &quot;c&quot;
+##  [18] &quot;d&quot; &quot;a&quot; &quot;l&quot; &quot;s&quot; &quot;a&quot; &quot;h&quot; &quot;r&quot; &quot;a&quot; &quot;q&quot; &quot;i&quot; &quot;m&quot; &quot;n&quot; &quot;v&quot; &quot;a&quot; &quot;t&quot; &quot;s&quot; &quot;d&quot;
+##  [35] &quot;l&quot; &quot;i&quot; &quot;s&quot; &quot;p&quot; &quot;i&quot; &quot;e&quot; &quot;s&quot; &quot;t&quot; &quot;v&quot; &quot;q&quot; &quot;d&quot; &quot;d&quot; &quot;n&quot; &quot;y&quot; &quot;d&quot; &quot;r&quot; &quot;q&quot;
+##  [52] &quot;l&quot; &quot;r&quot; &quot;g&quot; &quot;f&quot; &quot;y&quot; &quot;a&quot; &quot;t&quot; &quot;e&quot; &quot;n&quot; &quot;t&quot; &quot;d&quot; &quot;p&quot; &quot;v&quot; &quot;n&quot; &quot;n&quot; &quot;q&quot; &quot;d&quot;
+##  [69] &quot;t&quot; &quot;a&quot; &quot;h&quot; &quot;e&quot; &quot;d&quot; &quot;g&quot; &quot;e&quot; &quot;e&quot; &quot;r&quot; &quot;v&quot; &quot;n&quot; &quot;v&quot; &quot;a&quot; &quot;t&quot; &quot;v&quot; &quot;l&quot; &quot;g&quot;
+##  [86] &quot;k&quot; &quot;g&quot; &quot;d&quot; &quot;e&quot; &quot;a&quot; &quot;w&quot; &quot;d&quot; &quot;d&quot; &quot;a&quot; &quot;l&quot; &quot;m&quot; &quot;r&quot; &quot;l&quot; &quot;a&quot; &quot;y&quot; &quot;q&quot; &quot;h&quot;
+## [103] &quot;w&quot; &quot;f&quot; &quot;d&quot; &quot;g&quot; &quot;g&quot; &quot;k&quot; &quot;t&quot; &quot;s&quot; &quot;d&quot; &quot;g&quot; &quot;m&quot; &quot;r&quot; &quot;l&quot; &quot;i&quot; &quot;m&quot; &quot;d&quot; &quot;l&quot;
+## [120] &quot;p&quot; &quot;a&quot; &quot;k&quot; &quot;g&quot; &quot;e&quot; &quot;a&quot; &quot;l&quot; &quot;r&quot; &quot;h&quot; &quot;p&quot; &quot;n&quot; &quot;w&quot; &quot;g&quot; &quot;k&quot; &quot;y&quot; &quot;i&quot; &quot;k&quot;
+## [137] &quot;y&quot; &quot;l&quot; &quot;e&quot; &quot;f&quot; &quot;v&quot; &quot;k&quot; &quot;e&quot; &quot;k&quot; &quot;k&quot; &quot;k&quot; &quot;e&quot; &quot;a&quot; &quot;a&quot; &quot;d&quot; &quot;a&quot; &quot;a&quot; &quot;a&quot;
+## [154] &quot;v&quot; &quot;a&quot; &quot;a&quot; &quot;l&quot; &quot;k&quot; &quot;r&quot; &quot;r&quot; &quot;r&quot; &quot;t&quot; &quot;y&quot; &quot;r&quot; &quot;g&quot; &quot;w&quot; &quot;y&quot; &quot;v&quot; &quot;d&quot; &quot;g&quot;
+## [171] &quot;k&quot; &quot;t&quot; &quot;e&quot; &quot;k&quot; &quot;d&quot; &quot;v&quot; &quot;r&quot; &quot;k&quot; &quot;i&quot; &quot;f&quot; &quot;g&quot; &quot;l&quot; &quot;p&quot; &quot;a&quot; &quot;t&quot; &quot;g&quot; &quot;k&quot;
+## [188] &quot;a&quot; &quot;k&quot; &quot;n&quot; &quot;h&quot; &quot;p&quot; &quot;n&quot; &quot;w&quot; &quot;a&quot; &quot;d&quot; &quot;f&quot; &quot;q&quot; &quot;e&quot; &quot;y&quot; &quot;l&quot; &quot;n&quot; &quot;v&quot; &quot;v&quot;
+## [205] &quot;r&quot; &quot;e&quot; &quot;y&quot; &quot;s&quot; &quot;k&quot; &quot;v&quot; &quot;v&quot; &quot;f&quot; &quot;k&quot;
 ## attr(,&quot;name&quot;)
-## [1] &quot;DS028118_4814&quot;
+## [1] &quot;PITG_15287_PexRD1_RxLR&quot;
 ## attr(,&quot;Annot&quot;)
-## [1] &quot;&gt;DS028118_4814 [4150993 - 4150511] (REVERSE SENSE) | organism=Phytophthora_infestans_T30-4 | version=2015-03-12 | length=6928287 | SO=supercontig&quot;
+## [1] &quot;&gt;PITG_15287_PexRD1_RxLR&quot;
 ## attr(,&quot;class&quot;)
 ## [1] &quot;SeqFastadna&quot;</code></pre>
 <p>We have created a <code>ORF</code> object that includes the list of translated ORF’s from the subset of XX ORF’s from the <em>P. infestans</em> genome. For more information on the <code>SeqFastadna</code> objects please read the <a href="https://cran.r-project.org/package=seqinr"><code>seqinr manual</code></a>.</p>
@@ -189,13 +189,13 @@ ORF &lt;-<span class="st"> </span><span class="kw">read.fasta</span>(fasta.file)
 <p>To perform the effector search, <code>effectR</code> searches for the motifs of interest found in RxLR and CRN motifs. We have created the function <code>regex.search</code> to perform the seach of the motif of interest. The function <code>regex.search</code> requires the list of <code>SeqFastadna</code> objects and the gene family of interest. Here we show an example to search for sequences with RxLR-EER motifs from the 27 ORF subset of <em>P. infestans</em>. This ORF example data set contains 17 sequences with RxLR-EER motifs and 27 sequences with the LFLAK motifs found in CRN effectors. We expect to find, then, 17 sequences after using the <code>regex.search</code> function with the <code>motif='RxLR'</code> parameter:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">REGEX &lt;-<span class="st"> </span><span class="kw">regex.search</span>(<span class="dt">sequence =</span> ORF, <span class="dt">motif =</span> <span class="st">&quot;RxLR&quot;</span>)
 <span class="kw">length</span>(REGEX)</code></pre></div>
-<pre><code>## [1] 18</code></pre>
-<p>We observe that the <code>REGEX</code> object has 17 sequences with the RxLR motif. These sequences will be aligned using <code>MAFFT</code>, and used to build a HMM profile to search for similar sequences.</p>
+<pre><code>## [1] 15</code></pre>
+<p>We observe that the <code>REGEX</code> object has 27 sequences with the RxLR motif. These sequences will be aligned using <code>MAFFT</code>, and used to build a HMM profile to search for similar sequences.</p>
 <p>In addition to the basic functionality of <code>regex.search</code> to obtain both RxLR and CRN candidate genes, we have added the possibility of using a custom regex motif in order to search for non-canonical effectors or other protein motifs from different families of interest. The option <code>motif = &quot;custom&quot;</code> is couple with the <code>reg.pat</code> option, wich allows for the inclusion of any regular expression in the format specified by the <a href="https://stat.ethz.ch/R-manual/R-devel/library/base/html/regex.html"><code>regex</code></a> function in R. For example, if we want to obtain all candidates with a WV motif in the positions 60 to 90 of the aminoacid, we use the following commands:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">reg.pat &lt;-<span class="st"> &quot;^</span><span class="ch">\\</span><span class="st">w{50,60}[w,v]&quot;</span>
 REGEX &lt;-<span class="st"> </span><span class="kw">regex.search</span>(<span class="dt">sequence =</span> ORF, <span class="dt">motif =</span> <span class="st">&quot;custom&quot;</span>, <span class="dt">reg.pat =</span> reg.pat)
 <span class="kw">length</span>(REGEX)</code></pre></div>
-<pre><code>## [1] 11</code></pre>
+<pre><code>## [1] 17</code></pre>
 </div>
 <div id="multiple-sequence-alignment-and-hmmer-search" class="section level2">
 <h2>Multiple sequence alignment and HMMER search</h2>
@@ -205,8 +205,8 @@ REGEX &lt;-<span class="st"> </span><span class="kw">regex.search</span>(<span c
 </blockquote>
 <p>In addition, the <code>hmm.function</code> requires the path of the original FASTA file containing the translated ORF’s in the <code>original.seq</code> parameter of the function. <code>hmm.search</code> will use this file as a query in the <code>hmmsearch</code> software from HMMER, and search for all sequences with hits against the HMM profile created with the REGEX results.</p>
 <p>We will continue or example by performing a <code>hmm.search</code> in our example data set. We will include the original example FASTA file location (stored in the <code>fasta.file</code> object), the location of the <code>MAFFT</code> binary and the location of the HMMER binaries:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">candidate.rxlr &lt;-<span class="st"> </span><span class="kw">hmm.search</span>(<span class="dt">original.seq =</span> fasta.file, <span class="dt">regex.seq =</span> ORF, <span class="dt">mafft.path =</span> <span class="st">&quot;/usr/local/bin/&quot;</span>, <span class="dt">hmm.path =</span> <span class="st">&quot;/usr/local/bin/&quot;</span>)</code></pre></div>
-<p>The <code>hmm.search</code> function has resulted in 27 effector candidates. As a reminder, we used the <code>REGEX</code> results of an RxLR motif search, so we can consider this <code>hmm.search</code> results as RxLR candidate effectors. To obtain the CRN candidate effectors we should go back to the <code>regex.search</code> step and modify the <code>motif</code> parameter to <code>motif=&quot;CRN</code> and perform the <code>hmm.search</code> again.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">candidate.rxlr &lt;-<span class="st"> </span><span class="kw">hmm.search</span>(<span class="dt">original.seq =</span> fasta.file, <span class="dt">regex.seq =</span> REGEX, <span class="dt">mafft.path =</span> <span class="st">&quot;/usr/local/bin/&quot;</span>, <span class="dt">hmm.path =</span> <span class="st">&quot;/usr/local/bin/&quot;</span>)</code></pre></div>
+<p>The <code>hmm.search</code> function has resulted in 19 effector candidates. As a reminder, we used the <code>REGEX</code> results of an RxLR motif search, so we can consider this <code>hmm.search</code> results as RxLR candidate effectors. To obtain the CRN candidate effectors we should go back to the <code>regex.search</code> step and modify the <code>motif</code> parameter to <code>motif=&quot;CRN</code> and perform the <code>hmm.search</code> again.</p>
 <p>The <code>hmm.search</code> object returns a list of 3 elements:</p>
 <ol style="list-style-type: decimal">
 <li>The REGEX sequences used to build the HMM profile in a <code>SeqFastadna</code> class</li>

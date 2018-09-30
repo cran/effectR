@@ -1,14 +1,14 @@
 # effectR: An R package to call cytoplasmic effectors
 
+[![CRAN version](http://www.r-pkg.org/badges/version/effectR)](https://cran.r-project.org/package=effectR)
+
 # What is *effectR*
 
 The `effectR` package is an R package designed to call oomycete RxLR and CRN effectors by searching for the motifs of interest using regular expression searches and hidden markov models (HMM). 
 
-# What's new in version 1.0.1?
+# What's new in version 1.0.2?
 
-- User can provide an alignment file for `hmm.search`
-- Users can save the alignments created by `MAFFT` within `effectR`
-- User-defined seeds in `hmm.search` for reproducibility
+- New test dataset with *P. infestans* reference RxLR effectors 
 
 # Overview
 

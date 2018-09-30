@@ -134,7 +134,7 @@ REGEX <- regex.search(sequence = ORF, motif = "RxLR")
 length(REGEX)
 ```
 
-We observe that the `REGEX` object has 17 sequences with the RxLR motif. These sequences will be aligned using `MAFFT`, and used to build a HMM profile to search for similar sequences.
+We observe that the `REGEX` object has 27 sequences with the RxLR motif. These sequences will be aligned using `MAFFT`, and used to build a HMM profile to search for similar sequences.
 
 In addition to the basic functionality of `regex.search` to obtain both RxLR and CRN candidate genes, we have added the possibility of using a custom regex motif in order to search for non-canonical effectors or other protein motifs from different families of interest. The option `motif = "custom"` is couple with the `reg.pat` option, wich allows for the inclusion of any regular expression in the format specified by the [`regex`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/regex.html) function in R. For example, if we want to obtain all candidates with a WV motif in the positions 60 to 90 of the aminoacid, we use the following commands:
 
@@ -159,10 +159,10 @@ In addition, the `hmm.function` requires the path of the original FASTA file con
 We will continue or example by performing a `hmm.search` in our example data set. We will include the original example FASTA file location (stored in the `fasta.file` object), the location of the `MAFFT` binary and the location of the HMMER binaries:
 
 ```{r, eval=FALSE}
-candidate.rxlr <- hmm.search(original.seq = fasta.file, regex.seq = ORF, mafft.path = "/usr/local/bin/", hmm.path = "/usr/local/bin/")
+candidate.rxlr <- hmm.search(original.seq = fasta.file, regex.seq = REGEX, mafft.path = "/usr/local/bin/", hmm.path = "/usr/local/bin/")
 ```
 
-The `hmm.search` function has resulted in 27 effector candidates. 
+The `hmm.search` function has resulted in 19 effector candidates. 
 As a reminder, we used the `REGEX` results of an RxLR motif search, so we can consider this `hmm.search` results as RxLR candidate effectors.
 To obtain the CRN candidate effectors we should go back to the `regex.search` step and modify the `motif` parameter to `motif="CRN` and perform the `hmm.search` again.
 
